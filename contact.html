@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TravelEase</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Header -->
+   <header>
+        <nav class="container">
+            <a href="index.html" class="logo">TravelEase</a>
+            <div class="menu-toggle" id="menuToggle">Menu</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking.html">Book Hotel</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- Contact Us Page -->
+    <div id="contact" class="page active">
+        <div class="container">
+            <div class="contact-info">
+                <h2 style="color: #667eea; margin-bottom: 2rem;">Get In Touch</h2>
+                <p style="margin-bottom: 2rem;">We're here to help you plan the perfect trip. Reach out to us anytime!</p>
+                
+                <div class="contact-item">
+                    <h3>📞 Phone Support</h3>
+                    <p>+1 (555) 123-4567<br>Available 24/7</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>✉️ Email Support</h3>
+                    <p>support@travelease.com<br>info@travelease.com</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>🏢 Office Address</h3>
+                    <p>123 Travel Street<br>Adventure City, AC 12345<br>United States</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>⏰ Business Hours</h3>
+                    <p>Customer Support: 24/7<br>Office Hours: Mon-Fri 9AM-6PM EST</p>
+                </div>
+            </div>
+            
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" name="contactName" required>
+                        <div class="error-message">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address</label>
+                        <input type="email" id="contactEmail" name="contactEmail" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div class="error-message">Please enter a subject</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Hotel - TravelEase</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">TravelEase</a>
+            <div class="menu-toggle" id="menuToggle">Menu</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="booking.html">Book Hotel</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hotel Booking Page -->
+    <div id="booking" class="page active">
+        <div class="container">
+            <div class="form-container booking-form">
+                <h2>Book Your Perfect Stay</h2>
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" required>
+                            <div class="error-message">Please enter your destination</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="hotelType">Hotel Type</label>
+                            <select id="hotelType" name="hotelType" required>
+                                <option value="">Select Hotel Type</option>
+                                <option value="luxury">Luxury Resort</option>
+                                <option value="business">Business Hotel</option>
+                                <option value="budget">Budget Hotel</option>
+                                <option value="boutique">Boutique Hotel</option>
+                            </select>
+                            <div class="error-message">Please select a hotel type</div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkIn">Check-in Date</label>
+                            <input type="date" id="checkIn" name="checkIn" required>
+                            <div class="error-message">Please select check-in date</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOut">Check-out Date</label>
+                            <input type="date" id="checkOut" name="checkOut" required>
+                            <div class="error-message">Please select check-out date</div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <select id="adults" name="adults" required>
+                                <option value="">Number of Adults</option>
+                                <option value="1">1 Adult</option>
+                                <option value="2">2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                            <div class="error-message">Please select number of adults</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Children</label>
+                            <select id="children" name="children">
+                                <option value="0">No Children</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Children</option>
+                                <option value="3">3 Children</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guestName">Guest Name</label>
+                        <input type="text" id="guestName" name="guestName" required>
+                        <div class="error-message">Please enter guest name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guestEmail">Email Address</label>
+                        <input type="email" id="guestEmail" name="guestEmail" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="4"
+                            placeholder="Any special requests or preferences..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Search & Book Hotels</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

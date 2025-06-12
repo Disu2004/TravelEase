@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelEase - Your Perfect Travel Partner</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +26,6 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
     </header>
 
@@ -31,28 +33,27 @@
     <div id="home" class="page active">
         <section class="hero">
             <div class="container">
-                <h1>Discover Your Dream Destination</h1>
-                <p>Experience unforgettable journeys with our premium travel booking services</p>
-                <a href="booking.html" class="cta-button">Book Your Stay</a>
+                <h1 data-aos="fade-down">Discover Your Dream Destination</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Experience unforgettable journeys with our premium travel booking services</p>
+                <a href="booking.html" class="cta-button" data-aos="zoom-in" data-aos-delay="400">Book Your Stay</a>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
-                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #333;">Why Choose
-                    TravelEase?</h2>
+                <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #333;" data-aos="fade-up">Why Choose TravelEase?</h2>
                 <div class="features-grid">
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="flip-left">
                         <div class="feature-icon">🏨</div>
                         <h3>Premium Hotels</h3>
                         <p>Access to luxury hotels and resorts worldwide with exclusive deals and packages.</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="150">
                         <div class="feature-icon">💰</div>
                         <h3>Best Prices</h3>
                         <p>Guaranteed lowest prices with our price match promise and exclusive member discounts.</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
                         <div class="feature-icon">🎯</div>
                         <h3>Easy Booking</h3>
                         <p>Simple, fast, and secure booking process with instant confirmation and 24/7 support.</p>
@@ -60,51 +61,54 @@
                 </div>
             </div>
         </section>
+
         <!-- Image Gallery Section -->
         <section class="gallery">
             <div class="container">
-                <h2 style="text-align:center; font-size: 2.5rem; color: white; margin-bottom: 2rem;">Explore
-                    Destinations</h2>
+                <h2 style="text-align:center; font-size: 2.5rem; color: white; margin-bottom: 2rem;" data-aos="fade-up">Explore Destinations</h2>
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/l1.jpg" alt="Destination 1">
+                    <div class="gallery-item" data-aos="zoom-in">
+                        <img src="images/l1.webp" alt="Destination 1">
                         <div class="overlay">Maldives Paradise</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l2.jpg" alt="Destination 2">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/l2.webp" alt="Destination 2">
                         <div class="overlay">Swiss Alps</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l3.jpg" alt="Destination 3">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="images/l3.webp" alt="Destination 3">
                         <div class="overlay">Santorini Escape</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l4.jpg" alt="Destination 4">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="images/l4.webp" alt="Destination 4">
                         <div class="overlay">Dubai Luxury</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l5.jpg" alt="Destination 5">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                        <img src="images/l5.webp" alt="Destination 5">
                         <div class="overlay">Paris Romance</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l6.jpg" alt="Destination 6">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                        <img src="images/l6.webp" alt="Destination 6">
                         <div class="overlay">Bali Retreat</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l7.jpg" alt="Destination 7">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                        <img src="images/l7.webp" alt="Destination 7">
                         <div class="overlay">Tokyo Vibes</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/l8.jpg" alt="Destination 8">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700">
+                        <img src="images/l8.webp" alt="Destination 8">
                         <div class="overlay">New York Lights</div>
                     </div>
                 </div>
             </div>
         </section>
-
     </div>
-    <script src="script.js"></script>
 
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -105,12 +105,10 @@
     text-align: center;
     padding: 1rem;
     font-size: 1.1rem;
-    opacity: 0;
-    transform: translateY(100%);
+    display: none;
     transition: all 0.4s ease;
 }
 
 .gallery-item:hover .overlay {
-    opacity: 1;
-    transform: translateY(0);
+    display: block;
 }

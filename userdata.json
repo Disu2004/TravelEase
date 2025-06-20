@@ -1,1 +1,9 @@
-{"fullName":"Dishant Upadhay","email":"dishantu2004@gmil.com","phone":"9327149074","password":"Mahadev@123","confirmPassword":"Mahadev@123"}
+[
+  {
+    "fullName": "Dishant Upadhay",
+    "email": "dishantu2004@gmil.com",
+    "phone": "9327149074",
+    "password": "admin@123",
+    "confirmPassword": "admin@123"
+  }
+]
